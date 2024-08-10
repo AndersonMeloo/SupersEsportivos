@@ -1,0 +1,70 @@
+.links {
+    position: relative;
+}
+
+.links-comprar {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    border-radius: 6px;
+    display: none;
+    margin-top: 12px;
+}
+
+.links-comprar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: var(--fonte-secundaria);
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.link-ferrari:hover,
+.link-wv:hover,
+.link-audi:hover,
+.link-bmw:hover,
+.link-mercedes:hover,
+.link-porsche,
+.link-ford {
+    font-weight: 900;
+}
+
+.link-ferrari:hover {
+    color: red; 
+}
+
+.link-wv:hover {
+    color: black;  
+}
+
+.link-audi:hover {
+    color: #CCCCCC;  
+}
+
+.link-bmw:hover {
+    color: blue;
+}
+
+.link-mercedes:hover {
+    color: #484D50;
+}
+
+.link-ford:hover {
+   color: #40cfff;
+}
+
+.link-porsche:hover {
+    color: #efb810;
+}
+
+.links:hover .links-comprar {
+    display: flex;
+}

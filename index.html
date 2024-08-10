@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperEsportivos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="menu-esquerdo">
+                <h1 class="menu-titulo">SupersEsportivos</h1>
+                <div class="links">
+                    <a class="menu-links link-comprar" href="#r">Comprar</a>
+                    <div class="links-comprar">
+                        <a id="link-ferrari" class="link-ferrari" href="">Ferrari</a>
+                        <a id="link-vw" data-marca="volkswagen" class="link-wv" href="">Wolkswagen</a>
+                        <a id="link-audi" class="link-audi" href="">Audi</a>
+                        <a id="link-bmw" class="link-bmw" href="">Bmw</a>
+                        <a id="link-mercedes" class="link-mercedes" href="">Mercedes</a>
+                        <a id="link-ford" class="link-ford" href="">Ford</a>
+                        <a id="link-porsche" class="link-porsche" href="">Porsche</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-direito">
+                <a class="menu-links" href="./telas/entrar.html">Login</a>
+                <a class="menu-links" href="./telas/cadastrar.html">Cadastro</a>
+            </div>
+        </nav>
+
+        <!-- Centralizando o conteúdo no meio da página -->
+        <div class="formulario">
+            <p class="procurar-carros">Encontre o carro dos seus sonhos</p>
+            <form class="formulario-pesquisar" action="#pesquisar" method="GET" id="search-form">
+                <input type="text" name="query" placeholder="Digite marca ou modelo do carro" required
+                    id="search-input">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="container__marcas">
+        <div>
+            <p class="container__marcas-titulo">Categorias de Carros</p>
+            <div class="container__marcas-modelos">
+                <div class="marcas-carros">
+                    <a href="">
+                        <img src="imagens/marcas-carros/marca-ferrari.png" alt="">
+                    </a>
+                    <p class="marcas-carros--texto">Ferrari</p>
+                </div>
+
+                <div class="marcas-carros">
+                    <a href="">
+                        <img src="imagens/marcas-carros/marca volkswagen.png" alt="">
+                    </a>
+                    <p class="marcas-carros--texto">Wolkswagen</p>
+                </div>
+
+                <div class="marcas-carros">
+                    <a href="">
+                        <img src="imagens/marcas-carros/marca-audi.png" alt="">
+                    </a>
+                    <p class="marcas-carros--texto">Audi</p>
+                </div>
+
+                <div class="marcas-carros">
+                    <a href="">
+                        <img src="imagens/marcas-carros/marca-bmw.png" alt="">
+                    </a>
+                    <p class="marcas-carros--texto">Bmw</p>
+                </div>
+
+                <div class="marcas-carros">
+                    <a href="">
+                        <img src="imagens/marcas-carros/marca-mercedes.png" alt="">
+                    </a>
+                    <p class="marcas-carros--texto">Mercedes</p>
+                </div>
+
+                <div class="marcas-carros" id="carro-porsche">
+                    <a href="">
+                        <img src="imagens/marcas-carros/marca-ford.png" alt="">
+                    </a>
+                    <p class="marcas-carros--texto">Ford</p>
+                </div>
+
+                <div class="marcas-carros">
+                    <a href="">
+                        <img src="imagens/marcas-carros/marca-porsche.png" alt="">
+                    </a>
+                    <p class="marcas-carros--texto">Porsche</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mais__buscados">
+        <h1 class="mais__buscados--titulos">Carros mais buscados</h1>
+        <div class="mais__buscados-carros" id="car-list">
+
+            <div class="buscas-carros marca-carro" data-carro="Golf GTI Wolkswagen">
+                <h2 class="destaques__titulo">Golf</h2>
+                <p class="destaques__texto">GTI</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/Golf GTI.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">VolksWagen Golf</p>
+                <p class="destaque__motor">2.0 GTI 16V Turbo</p>
+                <p class="destaque__preço">R$130.000</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros" data-carro="Porsche Panamera">
+                <h2 class="destaques__titulo">Porcshe</h2>
+                <p class="destaques__texto">Panamera</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/porsche-panamera.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Porsche Panamera</p>
+                <p class="destaque__motor">3.6 V6 24V 4P</p>
+                <p class="destaque__preço">R$330.900</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros" data-carro="Ford Mustang">
+                <h2 class="destaques__titulo">Ford</h2>
+                <p class="destaques__texto">Mustang</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/ford-mustang.png" alt="">
+                </a>
+                <p class="destaque__modelo">Ford Mustang</p>
+                <p class="destaque__motor">5.0 GT COUPÉ V8</p>
+                <p class="destaque__preço">R$344.990</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros" data-carro="Bmw M2">
+                <h2 class="destaques__titulo">Bmw</h2>
+                <p class="destaques__texto">M2</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/bmw-m2.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Bmw M2</p>
+                <p class="destaque__motor">3.0 I6 TWINTURBO</p>
+                <p class="destaque__preço">R$344.990</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mais__buscados-carros container__buscas">
+
+            <div class="buscas-carros" data-carro="Ferrari 812 GTS">
+                <h2 class="destaques__titulo">Ferrari</h2>
+                <p class="destaques__texto">812</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/ferrari-812-gts.jpeg" alt="">
+                </a>
+                <p class="destaque__modelo">Ferrari 812 GTS</p>
+                <p class="destaque__motor">6.5 V12 GASOLINA F1-DCT</p>
+                <p class="destaque__preço">R$ 6.462.666</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros" data-carro="Audi RS6 AVANT V8">
+                <h2 class="destaques__titulo">Audi</h2>
+                <p class="destaques__texto">RS6</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/audi-rs6.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Audi RS6</p>
+                <p class="destaque__motor">4.0 AVANT V8</p>
+                <p class="destaque__preço">R$ 1.211.990</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros" data-carro="Jetta Gli TSI Wolkswagen">
+                <h2 class="destaques__titulo">Jetta</h2>
+                <p class="destaques__texto">GLI</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/jetta-gli.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Jetta GLI</p>
+                <p class="destaque__motor">2.0 350 TSI GASOLINA GLI DSG</p>
+                <p class="destaque__preço">R$250.000</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros" data-carro="Mercedes-Bens Mercedes A45 AMG">
+                <h2 class="destaques__titulo">Mercedes-Benz</h2>
+                <p class="destaques__texto">A45</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/mercedes-amg45.jpeg" alt="">
+                </a>
+                <p class="destaque__modelo">MERCEDES-BENZ A 45 AMG</p>
+                <p class="destaque__motor">2.0 CGI GASOLINA S 4MATIC SPEEDSHIFT</p>
+                <p class="destaque__preço">R$ 422.900</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Esconder Conteúdo -->
+        <div class="mais__buscados-carros container__buscas">
+
+            <div class="buscas-carros hidden" data-carro="Audi A5 SPORTBACK">
+                <h2 class="destaques__titulo">Audi</h2>
+                <p class="destaques__texto">A5</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/audi-a5.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Audi A5</p>
+                <p class="destaque__motor">2.0 TFSI MHEV SPORTBACK S LINE S TRONIC</p>
+                <p class="destaque__preço">R$ 375.190</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros hidden" data-carro="Porsche 911">
+                <h2 class="destaques__titulo">Porsche</h2>
+                <p class="destaques__texto">911</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/porsche-carrera.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Porsche 911</p>
+                <p class="destaque__motor">3.0 24V H6 GASOLINA CARRERA S PDK</p>
+                <p class="destaque__preço">R$ 829.000</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros hidden" data-carro="Ferrari 458 ITALIA">
+                <h2 class="destaques__titulo">Ferrari</h2>
+                <p class="destaques__texto">458 Italia</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/ferrari-458.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Ferrari 458</p>
+                <p class="destaque__motor">4.5 V8 GASOLINA F1-DCTG</p>
+                <p class="destaque__preço">R$ 2.500.000</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros hidden" data-carro="Golf MK8">
+                <h2 class="destaques__titulo">Golf</h2>
+                <p class="destaques__texto">MK8</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/golf-mk8.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Golf MK8</p>
+                <p class="destaque__motor">TSI 2.0 LITROS</p>
+                <p class="destaque__preço">R$ 700.900</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mais__buscados-carros container__buscas">
+
+            <div class="buscas-carros hidden" data-carro="Bmw M3 COMPETITION">
+                <h2 class="destaques__titulo">Bmw</h2>
+                <p class="destaques__texto">M3</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/bmw-m3.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Bmw M3</p>
+                <p class="destaque__motor">3.0 I6 COMPETITION M</p>
+                <p class="destaque__preço">R$ 800.000</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros hidden" data-carro="Mercedes-Bens Mercedes AMG GT 63">
+                <h2 class="destaques__titulo">Mercedes-Bens</h2>
+                <p class="destaques__texto">AMG GT 63</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/mercedes-amg-gt63.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Mercedes-Bens</p>
+                <p class="destaque__motor">4.0 V8 TURBO 4MATIC+ SPEEDSHIFT</p>
+                <p class="destaque__preço">R$ 1.100.000</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros hidden" data-carro="Bmw X6 COMPETITION ">
+                <h2 class="destaques__titulo">Bmw</h2>
+                <p class="destaques__texto">X6</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/bmw-x6.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">Bmw X6</p>
+                <p class="destaque__motor">4.4 V8 BITURBO GASOLINA M COMPETITION</p>
+                <p class="destaque__preço">R$ 1.120.000</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="buscas-carros hidden" data-carro="Wolkswagen Tiguan TSI">
+                <h2 class="destaques__titulo">VolksWagen</h2>
+                <p class="destaques__texto">Tiguan</p>
+                <a href="">
+                    <img src="imagens/carros-mais-buscados/vw-tiguan.jpg" alt="">
+                </a>
+                <p class="destaque__modelo">VolksWagen Tiguan</p>
+                <p class="destaque__motor">2.0 300 TSI ALLSPACE R-LINE</p>
+                <p class="destaque__preço">R$ 276.990</p>
+                <div class="destaque__favoritos">
+                    <button class="destaque__favoritos--botao">
+                        <a class="destaque__favoritos--botao-link" href="">Ver mais</a>
+                    </button>
+                    <a href="">
+                        <img class="destaque__favoritos--botao-img" src="imagens/icones/icone-favorito.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Escondendo Conteúdo -->
+
+        <button class="btn__ver-mais" id="esconderConteudo">Ver Mais</button>
+        <button id="show-all" class="mostrar-Todos">Mostrar Todos</button>
+    </section>
+
+    <section class="rodape">
+        <footer class="conteudo__rodape">
+            <h1 class="rodape__titulo">SupersEsportivos</h1>
+            <div class="conteudo__rodape-contato">
+
+                <span class="rodape-linha"></span>
+
+                <div class="rodape__contato">
+                    <h1 class="rodape__contato--texto">Contato</h1>
+                    <div class="teste">
+                        <a href="https://api.whatsapp.com/send?phone=+5511988730794&text=Ol%C3%A1%2C+Seja+Bem+Vindo+Recrutado%21%0AEspero+que+conseguimos+entrar+em+um+acordo+e+voc%C3%AA+acabou+de+achar+o+que+procura%21"
+                            target="_blank">
+                            <img class="rodape-icone" src="imagens/icones-contato/icone-whatsapp.png"
+                                alt="Ícone Whatsapp">
+                        </a>
+                      
+                        <a href="https://www.instagram.com/andersonr_melo/" target="_blank">
+                            <img class="rodape-icone" src="imagens/icones-contato/icone-instagram.png"
+                                alt="Ícone Instagram">
+                        </a>
+                    </div>
+                </div>
+
+                <span class="rodape-linha"></span>
+
+                <div class="rodape__contato">
+                    <h1 class="rodape__contato--texto redes-sociais">Mídias</h1>
+                    <div class="teste">
+                        <a href="https://github.com/AndersonMeloo" target="_blank">
+                            <img class="rodape-icone" src="imagens/icones-contato/icone-github.png" alt="Ícone GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/anderson-melo-68010120a/" target="_blank">
+                            <img class="rodape-icone" src="imagens/icones-contato/icone-linkedin.png"
+                                alt="Ícone Linkedin">
+                        </a>
+                    </div>
+                </div>
+
+                <span class="rodape-linha"></span>
+
+                <div class="rodape__contato">
+                    <h3 class="rodape__contato--texto">Portfólio</h3>
+                    <div class="teste">
+                        <span href="">
+                            <img class="rodape-icone" src="imagens/icones-contato/icone-seta-direita.png"
+                                alt="Ícone Seta">
+                        </span>
+
+                        <a href="">
+                            <img class="rodape-icone" src="imagens/icones-contato/icone-navegador.png"
+                                alt="Ícone Navegador"></a>
+                    </div>
+                </div>
+
+                <span class="rodape-linha"></span>
+            </div>
+        </footer>
+        <p class="rodape__contato-texto">Desenvolvido por Anderson Melo</p>
+    </section>
+
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+
+</html>

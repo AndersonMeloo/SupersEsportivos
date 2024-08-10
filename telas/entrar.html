@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SupersEsportivos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Pegar Icons  https://fontawesome.com/v4/icons/ -->
+  <link rel="stylesheet" href="../styles-login-cadastro/login.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1>Entrar</h1>
+
+      <div id="msgError"></div>
+
+      <div class="label-flutuante">
+        <input class="usuarioLabel" type="text" id="usuario" paceholder="Digite " required />
+        <label id="userLabel" for="usuario">Usuario</label>
+      </div>
+
+      <div class="label-flutuante">
+        <input class="senhaLabel" type="password" id="senha" paceholder="" required />
+        <label id="senhaLabel" for="senha">Senha</label>
+        <i class="fa fa-eye" aria-hidden="true"></i>  <!-- Pegar Icons  https://fontawesome.com/v4/icons/ -->
+      </div>
+
+      <div class="justify-center">
+        <button onclick="entrar()">Entrar</button>
+      </div>
+
+      <div class="justify-center">
+        <hr class="linha" />
+      </div>
+
+      <p>
+        Não tem uma conta?
+        <a href="../telas/cadastrar.html">
+          Cadastre-se
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <script src="../assets/js/loginCliente.js"></script>
+
+</body>
+
+</html>

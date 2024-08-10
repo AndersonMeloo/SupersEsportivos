@@ -1,0 +1,163 @@
+.mais__buscados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    flex-direction: column;
+    background-color: #F9FBFC;
+}
+
+.mais__buscados-carros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mais__buscados--titulos {
+    margin: 2.2rem auto;
+    font-family: var(--fonte-primaria);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.buscas-carros {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+  
+    margin: 10px 0;
+}
+
+.destaques__titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.destaques__texto {
+    color: red;
+    margin: 6px 0;
+    font-family: var(--fonte-primaria);
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.destaque__modelo {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 6px;
+    font-family: var(--fonte-primaria);
+}
+
+.destaque__motor {
+    font-size: 12px;
+    color: #aeaeba;
+    font-weight: 600;
+    margin: 5px 0;
+    font-family: var(--fonte-secundaria);
+    text-transform: uppercase;
+}
+
+.destaque__preço {
+    color: #aeaeba;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: var(--fonte-secundaria);
+    letter-spacing: 0.8px;
+    margin-bottom: 2px;
+}
+
+.destaque__favoritos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.destaque__favoritos--botao {
+    padding: 4px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.destaque__favoritos--botao:hover {
+    background-color: #aeaeba;
+    transition: 2s;
+}
+
+.destaque__favoritos--botao-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.destaque__favoritos--botao-link:hover {
+    color: white;
+}
+
+.destaque__favoritos--botao-img {
+    width: 80%;
+    margin-top: 6px;
+}
+
+.container__buscas {
+    margin: 10px 0;
+}
+
+/* Esconder Conteúdo */
+
+.hidden {
+    display: none;
+    margin: 0;
+}
+
+.btn__ver-mais,
+#show-all {
+    border: none;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2e2d37;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: var(--fonte-secundaria);
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+#show-all {
+    display: none;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1220px) {
+
+    .mais__buscados--titulos {
+        font-size: 20px;
+    }
+
+    .buscas-carros {
+        margin: 0 auto;
+    }
+
+    .btn__ver-mais {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    #show-all {
+        width: 80%;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,70 @@
+.container__marcas {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.container__marcas-titulo {
+    margin-bottom: 2.5rem;
+    font-size: 30px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.container__marcas-modelos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.marcas-carros {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.marcas-carros--texto {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 14px;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .container__marcas {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .container__marcas-titulo {
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .container__marcas-modelos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .marcas-carros {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .marcas-carros--texto {
+        font-size: 12px;
+    }
+}

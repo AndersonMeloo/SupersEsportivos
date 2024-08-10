@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --fonte-primaria: 'Montserrat', sans-serif;
+  --fonte-secundaria: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url("/golf-gtiBranco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.137);
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.4);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  color: #f5f6ab;
+  font-family: var(--fonte-secundaria);
+}
+
+.label-flutuante input {
+  width: 100%;
+  padding: 8px 8px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #eaeac2;
+  background-color: transparent;
+  outline: none;
+  min-width: 160px;
+  font-size: 16px;
+  transition: all .2s ease-out;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 6px;
+}
+
+.label-flutuante {
+  position: relative;
+  padding-top: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-flutuante input:focus {
+  border-bottom: 2px solid #f5f6ab;
+}
+
+.label-flutuante label {
+  color: #eaeac2;
+  font-family: var(--fonte-primaria);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .4s ease-out;
+}
+
+.label-flutuante input:focus+label,
+.label-flutuante input:valid+label {
+  font-size: 14px;
+  margin-top: 0;
+  color: #f5f5f0;
+}
+
+button {
+  background-color: transparent;
+  border-color: #f5f6ab;
+  color: #eaeac2;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover {
+  background-color: #eaeac2;
+  color: black;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #f5f5f0;
+}
+
+#msgError {
+  font-family: var(--fonte-secundaria);
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess {
+  font-family: var(--fonte-primaria);
+  letter-spacing: 1px;
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
