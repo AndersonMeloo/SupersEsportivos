@@ -1,0 +1,50 @@
+.containerSobre {
+    width: 100%;
+    height: auto;
+    margin: 4rem 0;
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+
+        .containerTextos,
+        .containerImagem {
+            width: 50%;
+        }
+
+        .containerTextos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+
+            h1 {
+                color: #000;
+                font-family: 'Nunito', sans-serif;
+                font-style: italic;
+
+                span {
+                    color: #ff0000;
+                }
+            }
+
+            p {
+                font-size: .9rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+                letter-spacing: 1px;
+            }
+
+            a {
+
+            }
+        }
+
+        .containerImagem {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
