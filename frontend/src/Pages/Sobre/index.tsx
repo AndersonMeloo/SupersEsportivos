@@ -13,11 +13,23 @@ function Sobre() {
                         <h1>Supers<span>Esportivos</span></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incdunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciti aulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit essete cillum dolore eu fugiat nulla pariatur.</p>
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis. aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit laborum.</p>
-                        <a href="">Contact</a>
+
+                        <div className={sass.containerLinks}>
+                            <a href="https://www.linkedin.com/in/anderson-melo-68010120a/" target='_blank'>
+                                <img src="imagens/icons/linkedin.png" alt="" />
+                            </a>
+                            <a href="">
+                                <img src="imagens/icons/domain.png" alt="" />
+                            </a>
+                        </div>
                     </div>
 
                     <div className={sass.containerImagem}>
-                        <img src=".imagens/imagensBanner/VW-Golf-GTI-TCR-By-ABT.jpg" alt="" />
+
+                        <div className={sass.imagens}>
+                            <img src="imagens/imagensIndex/bmwM2.jpg" alt="" />
+                            <img src="imagens/imagensIndex/audiRS3.webp" alt="" />
+                        </div>
                     </div>
 
                 </div>
