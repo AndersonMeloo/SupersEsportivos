@@ -54,6 +54,11 @@
         border: 1px solid #ccc;
         width: 80%;
         background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
 
         h2 {
             margin: 1rem 0;
@@ -63,6 +68,90 @@
             font-size: 3rem;
             font-weight: 200;
             text-align: center;
+        }
+
+        .div1 {
+            width: 260px;
+            height: auto;
+            border: 1px solid #000;
+            border-radius: .4rem .4rem 0 0;
+
+            img {
+                width: 100%;
+                border-radius: .4rem .4rem 0 0;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: .2rem;
+                padding: .4rem;
+
+                h3,
+                p {
+                    margin-left: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    font-family: 'Nunito', sans-serif;
+                }
+
+                p {
+                    color: #ccc;
+                    font-weight: 400;
+                    font-family: 'Poppins', sans-serif;
+                    color: #696977;
+                    font-size: .8rem;
+                }
+
+                .textDelet {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+
+                    p {
+                        margin-right: auto;
+                        color: #fff;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        background-color: #2e2d37;
+                        border-radius: .2rem;
+                        width: 50%;
+                        padding: .2rem 1rem;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    button {
+                        border: none;
+                        box-shadow: none;
+                        background-color: #ff0000;
+                        border-radius: .4rem;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        .icon {
+                            color: #fff;
+                            padding: .2rem;
+                            border: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
