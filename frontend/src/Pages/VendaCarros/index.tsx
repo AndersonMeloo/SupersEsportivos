@@ -78,7 +78,7 @@ function VendaCarros() {
 
             <div className={sass.containerCarros}>
                 {carrosFiltrados.length === 0 ? (
-                    <p>Nenhum carro encontrado, selecione outra marca ou cadastre um carro</p>
+                    <p className={sass.carrosEncontrados}>Nenhum carro encontrado, selecione outra marca ou cadastre um carro!</p>
                 ) : (
                     carrosFiltrados.map(carro => (
                         <div key={carro.id} className={sass.div1}>
