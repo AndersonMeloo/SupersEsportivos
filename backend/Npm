@@ -16,3 +16,5 @@ npx prisma studio - localhost
 
 Forçar 
 npx prisma db push
+
+-- Remoção do output no schema.prisma e npx prisma generate novamente para carregar a conexão da API 
