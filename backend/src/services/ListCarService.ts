@@ -5,7 +5,7 @@ class ListCarService {
     async execute() {
 
         // findMany() - Encontrar todos
-        const customers = await prismaClient.customers.findMany()
+        const customers = await prismaClient.customer.findMany()
 
         return customers
     }

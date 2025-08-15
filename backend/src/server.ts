@@ -12,15 +12,16 @@ app.setErrorHandler((error, request, reply) => {
 const start = async () => {
 
     await app.register(cors, {
-        origin: 'http://localhost:5173/',
+        origin: '*',
         methods: ['GET', 'POST', 'DELETE'],
     })
 
     await app.register(routes)
 
     try {
-        await app.listen({ port: 3333 })
+        await app.listen({ port: 3333, host: '0.0.0.0' })
     } catch (error) {
+         console.error(error) // <--- adiciona isso para ver o erro real
         process.exit(1)
     }
 }

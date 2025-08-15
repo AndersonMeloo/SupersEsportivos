@@ -3,6 +3,7 @@ import prismaClient from "../prisma";
 interface CreateCarProps {
     marca: string,
     modelo: string
+    imagem: string,
     descricao: string,
     anoKm: string,
     local: string,
@@ -11,9 +12,9 @@ interface CreateCarProps {
 
 class CreateCarService {
 
-    async execute({ marca, modelo, descricao, anoKm, local, preco }: CreateCarProps) {
+    async execute({ marca, modelo, imagem, descricao, anoKm, local, preco }: CreateCarProps) {
 
-        if (!marca || !modelo || descricao || anoKm || local || preco) {
+        if (!marca || !modelo || !imagem || !descricao || !anoKm || !local || !preco) {
             throw new Error('Preencha todos os campos!')
         }
 
@@ -21,11 +22,12 @@ class CreateCarService {
             data: {
                 marca,
                 modelo,
+                imagem,
                 descricao,
                 anoKm,
                 local,
                 preco,
-                status: true
+                // status: true
             }
         })
 
