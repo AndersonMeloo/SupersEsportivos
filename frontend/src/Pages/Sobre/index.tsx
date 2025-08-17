@@ -1,3 +1,4 @@
+import { Github } from 'lucide-react';
 import sass from './sass.module.scss'
 
 function Sobre() {
@@ -11,8 +12,9 @@ function Sobre() {
 
                     <div className={sass.containerTextos}>
                         <h1>Supers<span>Esportivos</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incdunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciti aulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit essete cillum dolore eu fugiat nulla pariatur.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis. aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit laborum.</p>
+                        <p>Encontre os carros mais desejados do mercado em um só lugar.
+                            Na SupersEsportivos, você tem acesso às melhores ofertas de veículos esportivos e de luxo. Todos os anúncios são verificados para garantir mais segurança e confiança na sua negociação.</p>
+                        <p>Anuncie seu carro em poucos passos e tenha acesso a compradores reais e interessados. Nossa plataforma conecta você a um público apaixonado por carros de alta performance.  </p>
 
                         <div className={sass.containerLinks}>
                             <a href="https://www.linkedin.com/in/anderson-melo-68010120a/" target='_blank'>
@@ -20,6 +22,9 @@ function Sobre() {
                             </a>
                             <a href="">
                                 <img src="imagens/icons/domain.png" alt="" />
+                            </a>
+                            <a className={sass.iconGitHub} href="https://github.com/AndersonMeloo" target='_blank'>
+                                <Github size={18} />
                             </a>
                         </div>
                     </div>

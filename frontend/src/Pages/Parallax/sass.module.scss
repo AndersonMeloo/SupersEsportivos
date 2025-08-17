@@ -8,6 +8,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    transition: .3s ease-in-out;
+
+    @media screen and (min-width: 320px) and (max-width: 600px) {
+        height: 460px;
+    }
 
     .container {
         width: 80%;
@@ -16,6 +21,11 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        transition: .3s ease-in-out;
+
+        @media screen and (min-width: 320px) and (max-width: 600px) {
+            flex-direction: column;
+        }
 
         .div1,
         .div2,
