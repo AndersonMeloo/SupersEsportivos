@@ -1,15 +1,15 @@
 import { FastifyRequest, FastifyReply } from "fastify";
 import { CreateCarService } from "../services/CreateCarService";
 
-interface CreateCarControllerProps{ 
+interface CreateCarControllerProps {
     modelo: string,
-     marca: string,
-      imagem: string, 
-      descricao: string,
-      anoKm: string,
-       local: string, 
-       preco: number 
-    }
+    marca: string,
+    imagem: string,
+    descricao: string,
+    anoKm: string,
+    local: string,
+    preco: number
+}
 
 class CreateCarController {
 
@@ -17,7 +17,7 @@ class CreateCarController {
 
         const { marca, modelo, imagem, descricao, anoKm, local, preco } = request.body as CreateCarControllerProps
 
-            console.log(marca, modelo, imagem, descricao, anoKm, local, preco)
+        console.log(marca, modelo, imagem, descricao, anoKm, local, preco)
 
         const customerCar = new CreateCarService()
 

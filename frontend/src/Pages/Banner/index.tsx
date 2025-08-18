@@ -15,8 +15,7 @@ function Banner() {
                         <p>Cadastre seu carro e encontre interessados em minutos</p>
 
                         <div className={sass.links}>
-                            <a href="">Cadastre</a>
-                            <a href="">Contato</a>
+                            <a href="https://www.linkedin.com/in/andersonrodriguesmelo/" target='_blank'>Contato</a>
                         </div>
                     </div>
                 </div>

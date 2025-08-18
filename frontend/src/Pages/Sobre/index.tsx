@@ -17,10 +17,10 @@ function Sobre() {
                         <p>Anuncie seu carro em poucos passos e tenha acesso a compradores reais e interessados. Nossa plataforma conecta você a um público apaixonado por carros de alta performance.  </p>
 
                         <div className={sass.containerLinks}>
-                            <a href="https://www.linkedin.com/in/anderson-melo-68010120a/" target='_blank'>
+                            <a href="https://www.linkedin.com/in/andersonrodriguesmelo/" target='_blank'>
                                 <img src="imagens/icons/linkedin.png" alt="" />
                             </a>
-                            <a href="">
+                            <a href="https://portfolio-anderson-nine.vercel.app/" target='_blank'>
                                 <img src="imagens/icons/domain.png" alt="" />
                             </a>
                             <a className={sass.iconGitHub} href="https://github.com/AndersonMeloo" target='_blank'>
