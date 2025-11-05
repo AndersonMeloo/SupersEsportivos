@@ -21,9 +21,13 @@ O sistema permite cadastrar, listar e excluir carros, salvando as informações 
 🧩 Funcionalidades
 
 ✅ Cadastro de carros — envia dados como marca, modelo, descrição, local, ano/km e imagem
+
 ✅ Listagem de carros cadastrados — exibe todos os carros salvos no banco de dados
+
 ✅ Remoção de carros — exclusão direta pelo ID
+
 ✅ Integração completa entre front e back via API Fastify
+
 ✅ Banco de dados MongoDB gerenciado com Prisma ORM
 
 📦 Como Rodar o Projeto
