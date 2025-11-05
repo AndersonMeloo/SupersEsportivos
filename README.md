@@ -19,7 +19,7 @@ O sistema permite cadastrar, listar e excluir carros, salvando as informações 
 - CORS / Dotenv
 - 
 
-🧩 Funcionalidades
+## 🧩 Funcionalidades
 
 ✅ Cadastro de carros — envia dados como marca, modelo, descrição, local, ano/km e imagem
 
