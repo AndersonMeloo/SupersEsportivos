@@ -1,4 +1,4 @@
-🚗 ## SupersEsportivos — Catálogo de Carros
+🚗 ### SupersEsportivos — Catálogo de Carros
 
 Aplicação Full Stack inspirada na Webmotors, desenvolvida com React, Node.js (Fastify), Prisma e MongoDB.
 O sistema permite cadastrar, listar e excluir carros, salvando as informações (marca, modelo, categoria, imagem, preço, etc.) diretamente no banco de dados.
